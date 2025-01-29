@@ -136,7 +136,7 @@
         }
 
         .dark-theme .resume-content {
-            background-color: var(--dark-card);
+            background-color: var (--dark-card);
             border-color: var (--dark-border);
         }
 
@@ -243,6 +243,10 @@
             max-width: 100%;
             height: auto;
         }
+        .responsive-chart-container {
+            width: 100%;
+            overflow: hidden;
+        }
 
         .contact-section {
             max-width: 800px;
@@ -324,7 +328,9 @@
         <div class="contributions-content">
             <h2>GitHub Contributions</h2>
             <div class="github-contributions">
-                <img src="https://ghchart.rshah.org/abhinavrbharadwaj7" alt="GitHub Contributions" class="responsive-chart">
+                <div class="responsive-chart-container">
+                    <img src="https://ghchart.rshah.org/abhinavrbharadwaj7" alt="GitHub Contributions" class="responsive-chart">
+                </div>
             </div>
         </div>
     </section>
