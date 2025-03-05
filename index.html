@@ -133,11 +133,48 @@
             border-radius: 6px;
             padding: 2rem;
             border: 1px solid var(--light-border);
+            color: var(--light-text);
         }
 
         .dark-theme .resume-content {
-            background-color: var (--dark-card);
-            border-color: var (--dark-border);
+            background-color: var(--dark-card);
+            border-color: var(--dark-border);
+            color: var(--dark-text);
+        }
+
+        .dark-theme h3 {
+            color: var(--dark-text);
+        }
+
+        .dark-theme strong {
+            color: var(--dark-text);
+        }
+
+        .dark-theme .duration {
+            color: var(--dark-text);
+        }
+
+        .resume-content p, 
+        .resume-content li,
+        .resume-content strong {
+            color: inherit;
+        }
+
+        .dark-theme .resume-list li strong {
+            color: var(--accent);
+        }
+
+        .dark-theme .resume-list li {
+            color: var(--dark-text);
+        }
+
+        .dark-theme .experience-item,
+        .dark-theme .project-item {
+            color: var(--dark-text);
+        }
+
+        .dark-theme p {
+            color: var(--dark-text);
         }
 
         .resume-section h2 {
@@ -304,13 +341,13 @@
     <section class="profile-section" id="home">
         <img src="Untitled_design-removebg-preview.png" alt="Abhinav's Avatar" class="avatar">
         <h1>Abhinav R Bharadwaj</h1>
-        <p>Software Developer | Web Developer</p>
+        <p>Software Developer | Open Source Contributor</p>
         <div class="stats">
             <div class="stat-item" id="reposStat">
                 <i class="fas fa-code-branch"></i> Loading...
             </div>
             <div class="stat-item" id="resumeDownload" onclick="downloadResume()">
-                <i class="fas fa-file-download"></i> Download Resume
+                <i class="fas fa-file-download"></i> Resume
             </div>
         </div>
     </section>
@@ -338,7 +375,7 @@
     <section class="resume-section" id="resume">
         <div class="resume-content">
             <h2>ABHINAV R BHARADWAJ</h2>
-            <a href="https://drive.google.com/file/d/1K-qnTExs1zldLam4SCNhhxRescEEQTxC/view?usp=sharing" target="_blank" class="download-btn">
+            <a href="https://drive.google.com/file/d/154ysrc2cq57YHpE8iCM0gaI11dFG-_yu/view?usp=sharing" target="_blank" class="download-btn">
                 <i class="fas fa-download"></i> Download Resume
             </a>
 
@@ -387,9 +424,9 @@
 
             <h2>EDUCATION</h2>
             <ul class="resume-list">
-                <li>BE in Information Science and Engineering (CGPA: 6.83)</li>
-                <li>Class 12th Karnataka PU board (71.5%)</li>
-                <li>Class 10th ICSE (69.5%)</li>
+                <li>BE in Information Science and Engineering </li>
+                <li>Class 12th Karnataka PU board </li>
+                <li>Class 10th ICSE </li>
             </ul>
 
             <h2>CERTIFICATIONS</h2>
@@ -405,7 +442,7 @@
         <div class="contact-content">
             <h2>Contact</h2>
             <div class="contact-links">
-                <a href="https://x.com/ABHIKNOW2" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://twitter.com/abhinavrbharadwaj" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://github.com/abhinavrbharadwaj7" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/abhinavrbharadwaj/" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
@@ -483,7 +520,7 @@
 
         function downloadResume() {
             const link = document.createElement('a');
-            link.href = 'https://drive.google.com/file/d/1y08rZq_9ZXmJV79zWY6yYhesMFsScZNQ/view?usp=sharing';
+            link.href = 'https://drive.google.com/file/d/154ysrc2cq57YHpE8iCM0gaI11dFG-_yu/view?usp=sharing';
             link.target = '_blank';
             document.body.appendChild(link);
             link.click();
